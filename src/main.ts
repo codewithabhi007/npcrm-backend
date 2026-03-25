@@ -5,7 +5,7 @@ import { AppModule } from './app/app.module';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
-  app.setGlobalPrefix('api/v1');
+  app.setGlobalPrefix('api/v1/nayaa-property');
   const config = new DocumentBuilder()
     .setTitle('Swagger API')
     .setDescription('Nayaa Property Backend API')
